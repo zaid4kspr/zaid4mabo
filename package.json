@@ -4,9 +4,8 @@
   "license": "MIT",
   "scripts": {
     "start": "./node_modules/.bin/ts-node ./server.ts",
-    "zaid": "ng run user-web-v2:server && ng build --prod && npm run start:express-server",
-    "compile_@agm_core": "babel node_modules/@agm/core -d node_modules/@agm/core --presets es2015",
-    "postinstall": "npm run compile_@agm_core"
+    "zaid": "ng run user-web-v2:server && ng build --prod && npm run start:express-server"
+ 
   },
   "private": true,
   "dependencies": {
