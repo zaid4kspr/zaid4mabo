@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "./node_modules/.bin/ts-node ./server.ts",
-    "zaid": "ng run user-web-v2:server && ng build --prod && npm run start:express-server"
- 
+    "start:express-server": "node server",
+    "zaid": "ng run user-web-v2:server && ng build --prod && npm run start:express-server",
+    "compile_@agm_core": "babel node_modules/@agm/core -d node_modules/@agm/core --presets es2015",
+    "postinstall": "npm run compile_@agm_core"
   },
   "private": true,
   "dependencies": {
@@ -29,11 +30,12 @@
     "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.5",
     "@toverux/ngsweetalert2": "^2.0.1",
     "@types/googlemaps": "^3.30.7",
-    "angular2-busy": "^2.0.4",
     "angular2-masonry": "^0.4.0",
-    "angular2-universal": "^2.1.0-rc.1",
     "angularx-social-login": "^1.2.0",
     "as": "^0.4.1",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "body-parser": "^1.18.3",
     "bootstrap": "4.0.0-beta.2",
     "core-js": "^2.4.1",
@@ -44,12 +46,10 @@
     "jquery": "^3.2.1",
     "localStorage": "^1.0.3",
     "mime": "^2.3.1",
-    "ng-busy": "^6.0.0-rc0",
-    "ng-packagr": "^2.4.2",
+    "ng-busy": "^1.4.4",
     "ng-select": "^1.0.0-beta.6",
     "ng2-auto-complete": "^0.12.0",
     "ng2-completer": "^1.6.3",
-    "ngx-carousel": "^1.2.5",
     "ngx-infinite-scroll": "^0.8.2",
     "node": "^10.2.0",
     "node-localstorage": "^1.3.1",

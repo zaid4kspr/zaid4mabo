@@ -340,7 +340,7 @@ SOFTWARE.
 MIT
 MIT
 
-@angular/common@6.0.0
+@angular/forms@6.0.0
 MIT
 MIT
 
@@ -348,6 +348,6 @@ MIT
 MIT
 MIT
 
-@angular/forms@6.0.0
+@angular/common@6.0.0
 MIT
 MIT

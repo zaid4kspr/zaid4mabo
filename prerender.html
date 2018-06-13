@@ -1,0 +1,605 @@
+<html><head><style ng-transition="user-web-v2">.loading-vynd[_ngcontent-c0] {
+  width: 100px;
+}
+
+.loading-login[_ngcontent-c0] {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  text-align: center;
+  z-index: 2000;
+}</style><style ng-transition="user-web-v2">@media only screen and (max-width:991px) {
+  .social-icons[_ngcontent-c2] {
+    margin-top: 15px;
+  }
+  .footer-columns[_ngcontent-c2] {
+    flex-wrap: wrap;
+  }
+}</style><style ng-transition="user-web-v2">.header-home[_ngcontent-c3] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-left[_ngcontent-c3]   a[_ngcontent-c3] {
+  padding-left: 7px;
+  padding-right: 7px;
+  color: #ffffff;
+}
+
+.login-button[_ngcontent-c3] {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.social-media[_ngcontent-c3]{
+  color: white;
+}
+
+.icons[_ngcontent-c3]{
+  width: 30px;
+  height: 30px;;
+}
+
+a[_ngcontent-c3]:hover{
+  cursor: pointer;
+}
+
+.login-button[_ngcontent-c3]:hover {
+  background-color: white;
+  color: #363636;
+}
+
+.menu-button[_ngcontent-c3] {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.menu-button[_ngcontent-c3]:hover {
+  background-color: rgba(255, 255, 255, 0.2) ;
+}
+
+.logo-vynd[_ngcontent-c3] {
+  width: 220px;
+}
+
+.search-inputs[_ngcontent-c3]   div[_ngcontent-c3] {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.search-button[_ngcontent-c3] {
+  width: 100%;
+  background-color: #F03759;
+  color: #ffffff;
+  padding: 13.4px;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.search-button-lg[_ngcontent-c3] {
+  height: 47.5px;
+}
+
+.search-button[_ngcontent-c3]:hover {
+  background-color: #e45972;
+}
+
+.collection-title[_ngcontent-c3] {
+  color: #363636;
+  font-size: 22px;
+}
+
+.collection-description[_ngcontent-c3] {
+  color: #878787;
+  font-size: 16px;
+}
+
+.collection-item[_ngcontent-c3] {
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 24px;
+  margin: 5px;
+  padding: 20px;
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+}
+
+.tint[_ngcontent-c3] {
+  z-index: 2;
+  position: relative;
+  float: left;
+  cursor: pointer;
+}
+
+.tint[_ngcontent-c3]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  transition: all .2s linear;
+  z-index: 3
+}
+
+.tint[_ngcontent-c3]:hover:before {
+  background: none;
+}
+
+.tint[_ngcontent-c3]   span[_ngcontent-c3] {
+  position: relative;
+  z-index: 4;
+}
+
+.categorie-item[_ngcontent-c3] {
+  align-items: center;
+  color: #878787;
+  cursor: pointer;
+  padding: 25px;
+}
+
+.categorie-Romdhane[_ngcontent-c3] {
+  align-items: center;
+  color: #878787;
+  cursor: pointer;
+  padding: 25px;
+}
+
+.brick[_ngcontent-c3] {
+  width: 33%;
+}
+
+.review-item[_ngcontent-c3] {
+  background-color: white;
+  width: 100%;
+  padding: 15px;
+  border-radius: 0.5rem;
+}
+
+.review-header[_ngcontent-c3] {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-review-photo[_ngcontent-c3] {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.business-image[_ngcontent-c3] {
+  width: 50px;
+  height: 50px;
+  border-radius: 0.6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #F03759;
+}
+
+.review-photo[_ngcontent-c3] {
+  height: 140px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.category-icon[_ngcontent-c3] {
+  width: 60px;
+  height: 60px;
+}
+
+.Romdhan-icon[_ngcontent-c3] {
+  width: 100px;
+  height: 100px;
+}
+
+.Romdhan-icon-mobile[_ngcontent-c3]{
+  height:85px;
+  
+    border-radius: 5px;
+}
+
+.Romdhan-icon-mobile[_ngcontent-c3]:hover{
+  height:85px;
+  border : 2px solid #F03759;
+    border-radius: 5px;
+}
+
+.Romdhan-icon[_ngcontent-c3]:hover{
+    
+    border : 2px solid #F03759;
+    border-radius: 5px;
+}
+
+.keyword-input[_ngcontent-c3] {
+  font-size: 1rem;
+  padding: 11px;
+}
+
+.keyword-input-mobile[_ngcontent-c3] {
+  height: 54.17px;
+}
+
+.top-user[_ngcontent-c3] {
+  height: 100px;
+  background-color: #f05a75;
+  cursor: pointer;
+}
+
+.rose-color[_ngcontent-c3]{
+  color: #f05a75;
+}
+
+.top-user-content[_ngcontent-c3] {
+  height: 100px;
+  position: relative;
+  background-color: white;
+  border-radius: 0.1rem;
+  -webkit-clip-path: polygon(100% 0, 100% 91%, 43% 91%, 23% 9%, 0 9%, 0% 0%);
+  clip-path: polygon(100% 0, 100% 91%, 43% 91%, 23% 9%, 0 9%, 0% 0%);
+}
+
+.top-user-photo[_ngcontent-c3] {
+  margin-left: 10px;
+  width: 90px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.position-top-user[_ngcontent-c3] {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 50px;
+  color: white;
+}
+
+.blue-bg[_ngcontent-c3] {
+  background-color: #68c9cf;
+}
+
+.red-bg[_ngcontent-c3] {
+  background-color: #ed4a24;
+}
+
+.navigation[_ngcontent-c3] {
+  -webkit-filter: drop-shadow(0 7px 4px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0 7px 4px rgba(0, 0, 0, 0.2));
+}
+
+.navigation[_ngcontent-c3]:hover {
+  -webkit-filter: drop-shadow(0 15px 20px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(0 15px 20px rgba(0, 0, 0, 0.4));
+  cursor: pointer;
+
+}
+
+@media (min-width: 1300px) {
+  .element-responsive[_ngcontent-c3] {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .element-responsive[_ngcontent-c3] {
+    width: 49.99%;
+  }
+}
+
+@media (max-width: 850px) {
+  .element-responsive[_ngcontent-c3] {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .show-lg[_ngcontent-c3] {
+    display: "";
+  }
+  .hide-lg[_ngcontent-c3] {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .show-lg[_ngcontent-c3] {
+    display: none;
+  }
+  .hide-lg[_ngcontent-c3] {
+    display: "";
+  }
+}
+
+@media (max-width: 991px) {
+  .top-user[_ngcontent-c3] {
+    margin-bottom: 10px;
+  }
+  .search-inputs[_ngcontent-c3] {
+    display: none;
+  }
+
+  .header-home[_ngcontent-c3] {
+    display: none;
+  }
+}
+
+.menu-item[_ngcontent-c3] {
+  border-bottom: 1px solid #ffffff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media (max-width: 550px) {
+  .card-header-title[_ngcontent-c3]{
+    font-size: 20px;
+  }
+
+}
+
+.blog-item[_ngcontent-c3] {
+  background-color: white;
+  border-radius: 0.6rem;
+}
+
+.blog-item[_ngcontent-c3]:hover {
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .blog-item[_ngcontent-c3] {
+    margin-bottom: 20px;
+  }
+
+}
+
+.mobile-search-box[_ngcontent-c3] {
+  margin: 10px 5px;
+  padding:15px;
+  background-color: #fbfbfb;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.12);
+  border: 1px solid #ededed;
+}
+
+.nearby-box[_ngcontent-c3] {
+  background-color: white;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  padding: 20px 25px;
+}
+
+.collection-box[_ngcontent-c3] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  padding: 15px 15px;
+}
+
+.collection-business[_ngcontent-c3] {
+  margin-top:5px;
+  margin-bottom: 5px;
+}
+
+.collection-business-description[_ngcontent-c3] {
+  font-size: 12px;;
+  color: #888888;
+}
+
+black-color[_ngcontent-c3]{
+  color: black;
+}
+
+ul[_ngcontent-c3] {
+  list-style-type: none;
+}
+
+.cusinepopitem[_ngcontent-c3]{
+font-size: 20px;
+}
+
+.grey-color[_ngcontent-c3]{
+   color: grey;
+}
+
+.collection-business-title[_ngcontent-c3] {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #363636;
+}</style><title>Vynd-Les restaurants sur le Grand Tunis</title><meta content="Découvrez les avis d’utilisateurs et les recommandations sur les meilleurs : restaurants, bar, fast food, pizzeria, crêperie sur grand Tunis." name="description"><meta property="og:url" content="https://www.vynd.com"><meta property="og:type" content="business.business"><meta property="og:description" content="Découvrez les avis d’utilisateurs et les recommandations sur les meilleurs : restaurants, bar, fast food, pizzeria, crêperie sur grand Tunis." name="description"><meta property="og:title" content="Vynd-Les restaurants sur le Grand Tunis"><meta property="og:image" content="https://www.vynd.com/assets/img/vynd.jpg"><style ng-transition="user-web-v2">
+      ng-select {
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        vertical-align: middle;
+        width: 100%; }
+        ng-select * {
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box; }
+        ng-select > div {
+          border: 1px solid #ddd;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          cursor: pointer;
+          -webkit-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+          width: 100%; }
+          ng-select > div.disabled {
+            background-color: #eee;
+            color: #aaa;
+            cursor: default;
+            pointer-events: none; }
+          ng-select > div > div.single {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            height: 30px;
+            width: 100%; }
+            ng-select > div > div.single > div.value,
+            ng-select > div > div.single > div.placeholder {
+              -webkit-box-flex: 1;
+                  -ms-flex: 1;
+                      flex: 1;
+              line-height: 30px;
+              overflow: hidden;
+              padding: 0 10px;
+              white-space: nowrap; }
+            ng-select > div > div.single > div.placeholder {
+              color: #757575; }
+            ng-select > div > div.single > div.clear,
+            ng-select > div > div.single > div.toggle {
+              color: #aaa;
+              line-height: 30px;
+              text-align: center;
+              width: 30px; }
+              ng-select > div > div.single > div.clear:hover,
+              ng-select > div > div.single > div.toggle:hover {
+                background-color: #ececec; }
+            ng-select > div > div.single > div.clear {
+              font-size: 18px; }
+            ng-select > div > div.single > div.toggle {
+              font-size: 14px; }
+          ng-select > div > div.multiple {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: row wrap;
+                    flex-flow: row wrap;
+            height: 100%;
+            min-height: 30px;
+            padding: 0 10px;
+            width: 100%; }
+            ng-select > div > div.multiple > div.option {
+              background-color: #eee;
+              border: 1px solid #aaa;
+              border-radius: 4px;
+              color: #333;
+              cursor: default;
+              display: inline-block;
+              -ms-flex-negative: 0;
+                  flex-shrink: 0;
+              font-size: 14px;
+              line-height: 22px;
+              margin: 3px 5px 3px 0;
+              padding: 0 4px; }
+              ng-select > div > div.multiple > div.option span.deselect-option {
+                color: #aaa;
+                cursor: pointer;
+                font-size: 14px;
+                height: 20px;
+                line-height: 20px; }
+                ng-select > div > div.multiple > div.option span.deselect-option:hover {
+                  color: #555; }
+            ng-select > div > div.multiple input {
+              background-color: transparent;
+              border: none;
+              cursor: pointer;
+              height: 30px;
+              line-height: 30px;
+              padding: 0; }
+              ng-select > div > div.multiple input:focus {
+                outline: none; }
+        ng-select label {
+          color: rgba(0, 0, 0, 0.38);
+          display: block;
+          font-size: 13px;
+          padding: 4px 0; }
+    </style><style ng-transition="user-web-v2">.item-business-post-review[_ngcontent-c5]:hover {
+  border: 2px solid #f05a75;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  padding: 5px;
+}
+.item-business-post-review[_ngcontent-c5] {
+  width: 100px;
+  padding: 5px;
+  border: 2px solid #ffffff;
+  border-radius: 0.6rem;
+  background-color: #ffffff;
+}
+.business-selected[_ngcontent-c5] {
+  border: 2px solid #f05a75;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+.keyword-input[_ngcontent-c5] {
+  font-size: 1rem;
+  padding: 11px;
+}
+.business-autocomplete-section[_ngcontent-c5] {
+  overflow-x: auto;
+}</style><style ng-transition="user-web-v2">.search-inputs[_ngcontent-c6]   *[_ngcontent-c6] {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.search-button[_ngcontent-c6] {
+  background-color: #c6425f;
+  color: #ffffff;
+  padding-top: 8.5px;
+  padding-bottom: 8.5px;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.search-button[_ngcontent-c6]:hover {
+  background-color: #b9415c;
+}
+
+.login-button[_ngcontent-c6] {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.login-button[_ngcontent-c6]:hover {
+  background-color: white;
+  color: #363636;
+}
+
+.download-button[_ngcontent-c6] {
+  background-color: #F03759;
+  font-size: 12px;;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.download-button[_ngcontent-c6]:hover {
+  background-color: #e45972;
+}
+
+.download-icon[_ngcontent-c6] {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.download-feature[_ngcontent-c6] {
+  font-size: 12px;;
+  color: #888888;
+}
+
+.features-items[_ngcontent-c6]   span[_ngcontent-c6] {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}</style></head><body><app-root _nghost-c0="" ng-version="6.0.0"><!----><!----><router-outlet _ngcontent-c0=""></router-outlet><app-home _nghost-c3="" class="ng-tns-c3-0 ng-star-inserted"><div _ngcontent-c3="" class="container-fluid d-none d-lg-block mb-0 pb-0" style="min-height: 400px; background-size: cover; background-position: center; background-image: url(../../assets/img/restaurant-bg.jpg);"><div _ngcontent-c3="" class="container"><div _ngcontent-c3="" class="row"><div _ngcontent-c3="" class="col header-home lato-font horizental-flex flex-between"><div _ngcontent-c3="" class="header-left horizental-flex"><a _ngcontent-c3="" class="ng-tns-c3-0" href="https://support.vynd.com" target="">À propos</a><a _ngcontent-c3="" class="ng-tns-c3-0" href="https://manager.vynd.com/" target="">Vynd Manager</a><a _ngcontent-c3="" class="ng-tns-c3-0" href="http://blog.vynd.com/" target="">Blog</a><a _ngcontent-c3="" class="ng-tns-c3-0" href="https://www.vynd.com/life" target="">Vynderlife</a></div><div _ngcontent-c3="" class="header-right" style="position: absolute;top: 20px;right:-80px;"><!----><span _ngcontent-c3="" class="btn btn-info login-button ng-tns-c3-0 ng-star-inserted" routerlink="leaderboard" style="border: none;" tabindex="0"><div _ngcontent-c3="" class="horizental-flex flex-center"><span _ngcontent-c3="" class="ng-tns-c3-0">Classement &nbsp;|</span><img _ngcontent-c3="" class="ng-tns-c3-0" src="../../assets/img/vynd-point.svg" style="width: 20px;margin-right: 5px;margin-left: 10px;"><span _ngcontent-c3="" class="ng-tns-c3-0"></span></div></span><!----><!----></div></div></div><div _ngcontent-c3="" class="row" style="margin-top: 40px;"><div _ngcontent-c3="" class="col-12 text-center"><img _ngcontent-c3="" class="logo-vynd" src="../../assets/img/logo-vynd.svg"></div><div _ngcontent-c3="" class="col-12 text-center lato-bold-font" style="font-size: 28px;margin-top: 10px;color: white;">  les meilleurs restaurants sur Grand Tunis </div><div _ngcontent-c3="" class="col-1"></div><div _ngcontent-c3="" class="col-10" style="margin-top: 20px"><div _ngcontent-c3="" class="row search-inputs"><div _ngcontent-c3="" class="col-3"><ng-select _ngcontent-c3="" class="region-select ng-untouched ng-pristine ng-valid" placeholder="Choisir une région" required="" style="z-index: 1000"><!----><div class="below" tabindex="0"><!----><div class="single ng-star-inserted"><!----><!----><div class="placeholder ng-star-inserted"> Choisir une région </div><!----><!----><!----><div class="toggle ng-star-inserted"> ▼ </div></div><!----></div><!----></ng-select></div><div _ngcontent-c3="" class="col-7" id="blurSection"><input _ngcontent-c3="" class="form-control form-control-lg keyword-input ng-untouched ng-pristine ng-valid" placeholder="Choisir par catégorie" type="text" value=""><!----></div><div _ngcontent-c3="" class="col-2"><span _ngcontent-c3="" class="btn search-button search-button-lg">Rechercher</span></div></div><div _ngcontent-c3="" class="row d-lg-none"><div _ngcontent-c3="" class="col-12 horizental-flex flex-between"><input _ngcontent-c3="" class="form-control keyword-input keyword-input-mobile ng-untouched ng-pristine ng-valid" placeholder="Choisir par catégorie" style="padding:13px !important;width: 100%;" type="text" value=""><!----></div><div _ngcontent-c3="" class="col-12" style="margin-top:10px;margin-bottom: 40px;"><ng-select _ngcontent-c3="" class="region-select-mobile" placeholder="Choisir une région" style="width: calc(60% - 15px);z-index: 11"><!----><div class="below" tabindex="0"><!----><div class="single ng-star-inserted"><!----><!----><div class="placeholder ng-star-inserted"> Choisir une région </div><!----><!----><!----><div class="toggle ng-star-inserted"> ▼ </div></div><!----></div><!----></ng-select><span _ngcontent-c3="" class="btn search-button" style="margin-left: 10px;width: 40%;">Rechercher</span></div></div></div><div _ngcontent-c3="" class="col-1"></div></div></div></div><div _ngcontent-c3="" class="container-fluid d-lg-none" style="background-size: cover; background-position: center; background-image: url(../../assets/img/restaurant-bg.jpg);"><div _ngcontent-c3="" class="row"><div _ngcontent-c3="" class="col-12 header-home lato-font horizental-flex flex-between"><div _ngcontent-c3="" class="header-left horizental-flex"><a _ngcontent-c3="" class="ng-tns-c3-0" href="https://support.vynd.com" target="_blank">Support</a><a _ngcontent-c3="" class="ng-tns-c3-0" href="https://manager.vynd.com/" target="_blank">Vynd Manager</a><a _ngcontent-c3="" class="ng-tns-c3-0" href="http://blog.vynd.com/" target="_blank">Blog</a><a _ngcontent-c3="" class="ng-tns-c3-0" href="https://www.vynd.com/life" target="_blank">Vynderlife</a></div><div _ngcontent-c3="" class="header-right"><!----><span _ngcontent-c3="" class="btn btn-info login-button ng-tns-c3-0 ng-star-inserted" routerlink="leaderboard" style="border: none;" tabindex="0"><div _ngcontent-c3="" class="horizental-flex flex-center"><span _ngcontent-c3="" class="ng-tns-c3-0">Classement &nbsp;|</span><img _ngcontent-c3="" class="ng-tns-c3-0" src="../../assets/img/vynd-point.svg" style="width: 20px;margin-right: 5px;margin-left: 10px;"><span _ngcontent-c3="" class="ng-tns-c3-0"></span></div></span><!----></div></div><div _ngcontent-c3="" class="col-12 horizental-flex flex-between flex-center" style="padding-top: 20px;padding-bottom: 20px;"><span _ngcontent-c3="" class="btn btn-info menu-button"><img _ngcontent-c3="" class="ng-tns-c3-0" src="../../assets/img/menu.svg" style="width: 20px;"></span><!----></div><!----></div><div _ngcontent-c3="" class="row"><div _ngcontent-c3="" class="col-12 text-center" style="margin-top: 20px;"><img _ngcontent-c3="" class="ng-tns-c3-0" src="../../assets/img/logo-vynd.svg" style="width: 180px;"></div><div _ngcontent-c3="" class="col-12 text-center lato-font" style="margin-top: 10px;color: white;"><h1 _ngcontent-c3="" class="ng-tns-c3-0"><b _ngcontent-c3="" class="ng-tns-c3-0">  les meilleurs restaurants sur Grand Tunis </b></h1></div><div _ngcontent-c3="" class="col-12" style="margin-top: 10px;margin-bottom: 10px;font-size: 20px;"><div _ngcontent-c3="" class="mobile-search-box horizental-flex flex-between flex-center"><span _ngcontent-c3="" class="horizental-flex flex-center"><img _ngcontent-c3="" class="ng-tns-c3-0" src="../../assets/img/location.svg" style="width: 16px;margin-right: 10px;"><span _ngcontent-c3="" class="lato-black-font" style="color: #363636"></span></span><img _ngcontent-c3="" class="ng-tns-c3-0" src="../../assets/img/down.svg" style="width: 20px"></div><div _ngcontent-c3="" class="mobile-search-box horizental-flex flex-center"><img _ngcontent-c3="" class="ng-tns-c3-0" src="../../assets/img/search-icon.svg" style="width: 16px;margin-right: 10px"><span _ngcontent-c3="" class="lato-font" style="color:#88959b">Choisir par catégorie</span></div></div></div></div><div _ngcontent-c3="" class="container-fluid d-none d-lg-block" style="background-color: #f2f2f2;padding-top: 20px;padding-bottom: 0px;"><div _ngcontent-c3="" class="container"><div _ngcontent-c3="" class="row" style="margin-top: 20px;"><div _ngcontent-c3="" class="col-12 lato-semibold-font collection-title"><h2 _ngcontent-c3="" class="ng-tns-c3-0" style="font-size: 25px;">Rechercher par catégorie</h2></div><div _ngcontent-c3="" class="row text-center w-100 ml-2 bg-white" style="border-radius: 0.3rem;"><!----><div _ngcontent-c3="" class="col mx-auto  px-3 py-2  text-center  ng-tns-c3-0 ng-star-inserted" style="cursor: pointer;"><img _ngcontent-c3="" class="Romdhan-icon" src="../../assets/img/categorieRomdhan/fater.png"></div><div _ngcontent-c3="" class="col mx-auto  px-3 py-2  text-center  ng-tns-c3-0 ng-star-inserted" style="cursor: pointer;"><img _ngcontent-c3="" class="Romdhan-icon" src="../../assets/img/categorieRomdhan/dejeuner.png"></div><div _ngcontent-c3="" class="col mx-auto  px-3 py-2  text-center  ng-tns-c3-0 ng-star-inserted" style="cursor: pointer;"><img _ngcontent-c3="" class="Romdhan-icon" src="../../assets/img/categorieRomdhan/coffee.png"></div><div _ngcontent-c3="" class="col mx-auto  px-3 py-2  text-center  ng-tns-c3-0 ng-star-inserted" style="cursor: pointer;"><img _ngcontent-c3="" class="Romdhan-icon" src="../../assets/img/categorieRomdhan/shour.png"></div></div><div _ngcontent-c3="" class="col"><div _ngcontent-c3="" class="horizental-flex lato-font hide-lg" style="background-color: white;border-radius: 0.3rem;justify-content: center;margin-top: 10px;padding-left: 15px;padding-right: 15px;"><!----><span _ngcontent-c3="" class="ng-tns-c3-0 ng-star-inserted"><!----><div _ngcontent-c3="" class="categorie-item vertical-flex ng-tns-c3-0 ng-star-inserted"><div _ngcontent-c3="" class="ng-tns-c3-0" style="display: flex;flex-direction: column;align-items: center"><img _ngcontent-c3="" class="category-icon" src="../../assets/img/categories/fast.svg"><span _ngcontent-c3="" class="ng-tns-c3-0"> Fast Food </span></div></div></span><span _ngcontent-c3="" class="ng-tns-c3-0 ng-star-inserted"><!----><div _ngcontent-c3="" class="categorie-item vertical-flex ng-tns-c3-0 ng-star-inserted"><div _ngcontent-c3="" class="ng-tns-c3-0" style="display: flex;flex-direction: column;align-items: center"><img _ngcontent-c3="" class="category-icon" src="../../assets/img/categories/pizza.svg"><span _ngcontent-c3="" class="ng-tns-c3-0"> Pizzeria </span></div></div></span><span _ngcontent-c3="" class="ng-tns-c3-0 ng-star-inserted"><!----><div _ngcontent-c3="" class="categorie-item vertical-flex ng-tns-c3-0 ng-star-inserted"><div _ngcontent-c3="" class="ng-tns-c3-0" style="display: flex;flex-direction: column;align-items: center"><img _ngcontent-c3="" class="category-icon" src="../../assets/img/categories/crepe.svg"><span _ngcontent-c3="" class="ng-tns-c3-0"> Bar à Crêpes </span></div></div></span><span _ngcontent-c3="" class="ng-tns-c3-0 ng-star-inserted"><!----></span><span _ngcontent-c3="" class="ng-tns-c3-0 ng-star-inserted"><!----></span></div><div _ngcontent-c3="" class="horizental-flex lato-font hide-lg" style="background-color: white;border-radius: 0.3rem;justify-content: center;margin-top: 0;padding-left: 15px;padding-right: 15px;"><!----><span _ngcontent-c3="" class="ng-tns-c3-0 ng-star-inserted"><!----></span><span _ngcontent-c3="" class="ng-tns-c3-0 ng-star-inserted"><!----></span><span _ngcontent-c3="" class="ng-tns-c3-0 ng-star-inserted"><!----></span><span _ngcontent-c3="" class="ng-tns-c3-0 ng-star-inserted"><!----></span><span _ngcontent-c3="" class="ng-tns-c3-0 ng-star-inserted"><!----><div _ngcontent-c3="" class="categorie-item vertical-flex ng-tns-c3-0 ng-star-inserted"><div _ngcontent-c3="" class="ng-tns-c3-0" style="display: flex;flex-direction: column;align-items: center"><img _ngcontent-c3="" class="category-icon" src="../../assets/img/categories/restaurant.svg"><span _ngcontent-c3="" class="ng-tns-c3-0"> Restaurant </span></div></div></span></div></div></div><div _ngcontent-c3="" class="row" style="margin-top: 20px;"><div _ngcontent-c3="" class="col-12 lato-semibold-font collection-title"><img _ngcontent-c3="" class="ng-tns-c3-0" alt="restauration-vynderLife" src="../../assets/img/vynderlife.png" style="width: 200px;cursor: pointer;"></div><div _ngcontent-c3="" class="col-12 lato-medium-font collection-description" style="margin-bottom: 10px;"><p _ngcontent-c3="" class="ng-tns-c3-0">  les meilleurs bons plans et les conseils des plus grands experts du domaine de la restauration! </p></div><!----></div><div _ngcontent-c3="" class="row" style="margin-top: 10px;"><div _ngcontent-c3="" class="col-12"><div _ngcontent-c3="" class="soft-hr-blue"></div></div><div _ngcontent-c3="" class="col-12 text-center lato-bold-font"><a _ngcontent-c3="" class="href-underlined" style="color: #1a709d;cursor: pointer;">Voir plus d'articles sur VynderLife ▶ </a></div><div _ngcontent-c3="" class="col-12" style="margin-bottom: 20px;"><div _ngcontent-c3="" class="soft-hr-blue"></div></div></div><div _ngcontent-c3="" class="row show-lg"><div _ngcontent-c3="" class="col-12 lato-semibold-font collection-title" style="margin-top: 20px;"><h2 _ngcontent-c3="" class="ng-tns-c3-0" style="font-size: 25px;">   expériences dans les meilleurs restaurants avec les Vynders </h2></div><div _ngcontent-c3="" class="col-12 lato-medium-font collection-description"><p _ngcontent-c3="" class="ng-tns-c3-0">  avis sur un endroit que  et  avec la communauté.  avis compte sur Vynd. </p></div><div _ngcontent-c3="" class="col-12"><app-post-review _ngcontent-c3="" class="ng-tns-c3-0" _nghost-c5=""><div _ngcontent-c5="" class="vertical-flex lato-font" id="add-review-box" style="background-color: white;border-radius: 0.6rem;margin-top: 10px;padding: 15px;"><div _ngcontent-c5="" class="horizental-flex flex-center flex-between" style="cursor: pointer"><input _ngcontent-c5="" class="form-control form-control-lg keyword-input ng-untouched ng-pristine ng-valid" placeholder="Sélectionner un restaurant et partager un avis" style="width: 50%;" type="text" value=""></div><div _ngcontent-c5="" class="comment-hr"></div><div _ngcontent-c5="" class="horizental-flex business-autocomplete-section flex-between" style="padding-bottom: 5px;"><!----><span _ngcontent-c5="" class="item-business-post-review vertical-flex lato-font flex-center text-center ng-star-inserted" style="font-size: 12px;;"><!----><img _ngcontent-c5="" class="business-comment-image ng-star-inserted" onerror="this.src = '../../assets/img/business_pardef.png';" src="https://vyndstorage.blob.core.windows.net/images/636314211954673037.jpg"><!----><span _ngcontent-c5="" style="margin-top: 5px;font-size: 12px;;"></span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;">Coffee shop</span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;"></span></span><span _ngcontent-c5="" class="item-business-post-review vertical-flex lato-font flex-center text-center ng-star-inserted" style="font-size: 12px;;"><!----><img _ngcontent-c5="" class="business-comment-image ng-star-inserted" onerror="this.src = '../../assets/img/business_pardef.png';" src="https://vyndstorage.blob.core.windows.net/images/636314210179923520.jpg"><!----><span _ngcontent-c5="" style="margin-top: 5px;font-size: 12px;;"></span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;">Restaurant</span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;"></span></span><span _ngcontent-c5="" class="item-business-post-review vertical-flex lato-font flex-center text-center ng-star-inserted" style="font-size: 12px;;"><!----><img _ngcontent-c5="" class="business-comment-image ng-star-inserted" onerror="this.src = '../../assets/img/business_pardef.png';" src="https://vyndstorage.blob.core.windows.net/images/636512753499105912.png"><!----><span _ngcontent-c5="" style="margin-top: 5px;font-size: 12px;;"></span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;">Café-Restaurant</span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;"></span></span><span _ngcontent-c5="" class="item-business-post-review vertical-flex lato-font flex-center text-center ng-star-inserted" style="font-size: 12px;;"><!----><img _ngcontent-c5="" class="business-comment-image ng-star-inserted" onerror="this.src = '../../assets/img/business_pardef.png';" src="https://vyndstorage.blob.core.windows.net/images/636314206224889088.jpg"><!----><span _ngcontent-c5="" style="margin-top: 5px;font-size: 12px;;"></span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;">Burger</span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;"></span></span><span _ngcontent-c5="" class="item-business-post-review vertical-flex lato-font flex-center text-center ng-star-inserted" style="font-size: 12px;;"><!----><img _ngcontent-c5="" class="business-comment-image ng-star-inserted" onerror="this.src = '../../assets/img/business_pardef.png';" src="https://vyndstorage.blob.core.windows.net/images/636443671777189362.png"><!----><span _ngcontent-c5="" style="margin-top: 5px;font-size: 12px;;"></span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;">Fast Food</span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;"></span></span><span _ngcontent-c5="" class="item-business-post-review vertical-flex lato-font flex-center text-center ng-star-inserted" style="font-size: 12px;;"><!----><img _ngcontent-c5="" class="business-comment-image ng-star-inserted" onerror="this.src = '../../assets/img/business_pardef.png';" src="https://vyndstorage.blob.core.windows.net/images/636314126681270051.jpg"><!----><span _ngcontent-c5="" style="margin-top: 5px;font-size: 12px;;"></span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;">Restaurant</span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;"></span></span><span _ngcontent-c5="" class="item-business-post-review vertical-flex lato-font flex-center text-center ng-star-inserted" style="font-size: 12px;;"><!----><img _ngcontent-c5="" class="business-comment-image ng-star-inserted" onerror="this.src = '../../assets/img/business_pardef.png';" src="https://vyndstorage.blob.core.windows.net/images/636314197275130204.jpg"><!----><span _ngcontent-c5="" style="margin-top: 5px;font-size: 12px;;"></span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;">Restaurant</span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;"></span></span><span _ngcontent-c5="" class="item-business-post-review vertical-flex lato-font flex-center text-center ng-star-inserted" style="font-size: 12px;;"><!----><img _ngcontent-c5="" class="business-comment-image ng-star-inserted" onerror="this.src = '../../assets/img/business_pardef.png';" src="https://vyndstorage.blob.core.windows.net/images/636362286776788873.jpg"><!----><span _ngcontent-c5="" style="margin-top: 5px;font-size: 12px;;"></span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;">Coffee shop</span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;"></span></span><span _ngcontent-c5="" class="item-business-post-review vertical-flex lato-font flex-center text-center ng-star-inserted" style="font-size: 12px;;"><!----><img _ngcontent-c5="" class="business-comment-image ng-star-inserted" onerror="this.src = '../../assets/img/business_pardef.png';" src="https://vyndstorage.blob.core.windows.net/images/636474835410625231.jpg"><!----><span _ngcontent-c5="" style="margin-top: 5px;font-size: 12px;;"></span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;">Bar à Crêpes</span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;"></span></span><span _ngcontent-c5="" class="item-business-post-review vertical-flex lato-font flex-center text-center ng-star-inserted" style="font-size: 12px;;"><!----><img _ngcontent-c5="" class="business-comment-image ng-star-inserted" onerror="this.src = '../../assets/img/business_pardef.png';" src="https://vyndstorage.blob.core.windows.net/images/636314210913593323.jpg"><!----><span _ngcontent-c5="" style="margin-top: 5px;font-size: 12px;;"></span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;">Pizzeria</span><span _ngcontent-c5="" style="font-size: 12px;;color: #888888;"></span></span></div><ng-busy class="ng-tns-c9-4 ng-star-inserted"><!----></ng-busy><ng-busy-backdrop class="ng-tns-c8-3 ng-star-inserted"><!----></ng-busy-backdrop><div _ngcontent-c5="" class="comment-hr"></div><div _ngcontent-c5="" class="horizental-flex flex-between flex-center"><span _ngcontent-c5="" class="lato-font" style="color:#808b9e;font-size: 16px;">  évalutation </span><div _ngcontent-c5="" class="vertical-flex" style="align-items: flex-end"><div _ngcontent-c5="" class="horizental-flex"><!----></div><div _ngcontent-c5="" class="horizental-flex" style="margin-top: -8px"><span _ngcontent-c5=""><!----></span></div></div></div><div _ngcontent-c5="" class="horizental-flex flex-between flex-center"><div _ngcontent-c5="" class="vertical-flex" style="line-height: 1.8"><!----><div _ngcontent-c5="" class="horizental-flex ng-star-inserted" style="align-items: center;"><span _ngcontent-c5="" class="lato-font" style="font-size: 12px;;">Accueil et service :</span><span _ngcontent-c5="" class="horizental-flex"><span _ngcontent-c5="" style="margin-left:25px;"><!----></span></span></div><div _ngcontent-c5="" class="horizental-flex ng-star-inserted" style="align-items: center;"><span _ngcontent-c5="" class="lato-font" style="font-size: 12px;;">Cuisine :</span><span _ngcontent-c5="" class="horizental-flex"><span _ngcontent-c5="" style="margin-left:79px;"><!----></span></span></div><div _ngcontent-c5="" class="horizental-flex ng-star-inserted" style="align-items: center;"><span _ngcontent-c5="" class="lato-font" style="font-size: 12px;;">Ambiance :</span><span _ngcontent-c5="" class="horizental-flex"><span _ngcontent-c5="" style="margin-left:64px;"><!----></span></span></div><div _ngcontent-c5="" class="horizental-flex ng-star-inserted" style="align-items: center;"><span _ngcontent-c5="" class="lato-font" style="font-size: 12px;;">Rapport qualité/prix :</span><span _ngcontent-c5="" class="horizental-flex"><span _ngcontent-c5="" style="margin-left:10px;"><!----></span></span></div><div _ngcontent-c5="" class="horizental-flex ng-star-inserted" style="align-items: center;"><span _ngcontent-c5="" class="lato-font" style="font-size: 12px;;">Hygiène et propreté :</span><span _ngcontent-c5="" class="horizental-flex"><span _ngcontent-c5="" style="margin-left:11px;"><!----></span></span></div></div><textarea _ngcontent-c5="" rows="6" value="" placeholder="" class="ng-untouched ng-pristine ng-valid"></textarea></div><div _ngcontent-c5="" class="text-right" style="padding-top: 20px;"><span _ngcontent-c5="" class="download-button lato-font" style="padding: 10px 80px;font-size: 16px;cursor: pointer">Poster mon avis</span></div></div><ng-busy class="ng-tns-c9-2 ng-star-inserted"><!----></ng-busy><ng-busy-backdrop class="ng-tns-c8-1 ng-star-inserted"><!----></ng-busy-backdrop></app-post-review></div></div><div _ngcontent-c3="" class="row" style="margin-top: 20px;"><div _ngcontent-c3="" class="mx-auto lato-semibold-font collection-title"><h2 _ngcontent-c3="" class="ng-tns-c3-0" style="font-size: 25px;"><b _ngcontent-c3="" class="ng-tns-c3-0"> Activité récente des utilisateurs vynd</b></h2></div></div><div _ngcontent-c3="" class="row" style="margin-top: 10px;"><div _ngcontent-c3="" class="col-12"><div _ngcontent-c3="" class="soft-hr-blue"></div></div><div _ngcontent-c3="" class="col-12 text-center lato-bold-font"><a _ngcontent-c3="" class="href-underlined" style="color: #1a709d;cursor: pointer;">Voir plus d’actualités ▼ </a></div><div _ngcontent-c3="" class="col-12" style="margin-bottom: 20px;"><div _ngcontent-c3="" class="soft-hr-blue"></div></div></div></div></div><div _ngcontent-c3="" class="container-fluid d-lg-none" style="background-color: #f2f2f2;padding-top: 20px;padding-bottom: 20px;"><div _ngcontent-c3="" class="row"><div _ngcontent-c3="" class="col-12" style="margin-top: 10px;"><span _ngcontent-c3="" class="lato-bold-font" style="font-size: 16px; color: #888888;">Que veux tu faire ?</span></div><div _ngcontent-c3="" class="row mx-2 w-100 bg-white" style="border-radius: 0.3rem;"><!----><div _ngcontent-c3="" class="col-3 px-0 py-2  text-center  ng-tns-c3-0 ng-star-inserted"><img _ngcontent-c3="" class="Romdhan-icon-mobile" src="../../assets/img/categorieRomdhan/fater.png"></div><div _ngcontent-c3="" class="col-3 px-0 py-2  text-center  ng-tns-c3-0 ng-star-inserted"><img _ngcontent-c3="" class="Romdhan-icon-mobile" src="../../assets/img/categorieRomdhan/dejeuner.png"></div><div _ngcontent-c3="" class="col-3 px-0 py-2  text-center  ng-tns-c3-0 ng-star-inserted"><img _ngcontent-c3="" class="Romdhan-icon-mobile" src="../../assets/img/categorieRomdhan/coffee.png"></div><div _ngcontent-c3="" class="col-3 px-0 py-2  text-center  ng-tns-c3-0 ng-star-inserted"><img _ngcontent-c3="" class="Romdhan-icon-mobile" src="../../assets/img/categorieRomdhan/shour.png"></div></div><!----><div _ngcontent-c3="" class="col-12 vertical-flex collection-box ng-tns-c3-0 ng-star-inserted"><div _ngcontent-c3="" class="horizental-flex flex-between flex-center"><div _ngcontent-c3="" class="vertical-flex"><div _ngcontent-c3="" class="lato-bold-font collection-title"><span _ngcontent-c3="" class="ng-tns-c3-0"><h2 _ngcontent-c3="" class="ng-tns-c3-0"><span _ngcontent-c3="" class="lato-bold-font collection-title"> Une pizza </span></h2></span></div><div _ngcontent-c3="" class="collection-description"> Toute bonne histoire commence par une part de pizza  </div></div><img _ngcontent-c3="" class="ng-tns-c3-0" src="../../assets/img/nearby.svg" style="width: 35px;"></div><div _ngcontent-c3="" class="collection-businesses" style="margin-top: 10px;"><div _ngcontent-c3="" class="row"><!----></div></div><div _ngcontent-c3="" class="collection-view-more lato-bold-font " style="font-size: 16px;color: #ee4a24;"> VOIR PLUS &gt; </div></div><div _ngcontent-c3="" class="col-12 vertical-flex collection-box ng-tns-c3-0 ng-star-inserted"><div _ngcontent-c3="" class="horizental-flex flex-between flex-center"><div _ngcontent-c3="" class="vertical-flex"><div _ngcontent-c3="" class="lato-bold-font collection-title"><span _ngcontent-c3="" class="ng-tns-c3-0"><h2 _ngcontent-c3="" class="ng-tns-c3-0"><span _ngcontent-c3="" class="lato-bold-font collection-title"> Envie d'une crêpe? </span></h2></span></div><div _ngcontent-c3="" class="collection-description"> Je mange des crêpes, donc je suis ! </div></div><img _ngcontent-c3="" class="ng-tns-c3-0" src="../../assets/img/nearby.svg" style="width: 35px;"></div><div _ngcontent-c3="" class="collection-businesses" style="margin-top: 10px;"><div _ngcontent-c3="" class="row"><!----></div></div><div _ngcontent-c3="" class="collection-view-more lato-bold-font " style="font-size: 16px;color: #ee4a24;"> VOIR PLUS &gt; </div></div><div _ngcontent-c3="" class="col-12 vertical-flex collection-box ng-tns-c3-0 ng-star-inserted"><div _ngcontent-c3="" class="horizental-flex flex-between flex-center"><div _ngcontent-c3="" class="vertical-flex"><div _ngcontent-c3="" class="lato-bold-font collection-title"><span _ngcontent-c3="" class="ng-tns-c3-0"><h2 _ngcontent-c3="" class="ng-tns-c3-0"><span _ngcontent-c3="" class="lato-bold-font collection-title"> Un bon Fast Food </span></h2></span></div><div _ngcontent-c3="" class="collection-description"> Que serait la vie sans un lablebi ? </div></div><img _ngcontent-c3="" class="ng-tns-c3-0" src="../../assets/img/nearby.svg" style="width: 35px;"></div><div _ngcontent-c3="" class="collection-businesses" style="margin-top: 10px;"><div _ngcontent-c3="" class="row"><!----></div></div><div _ngcontent-c3="" class="collection-view-more lato-bold-font " style="font-size: 16px;color: #ee4a24;"> VOIR PLUS &gt; </div></div><div _ngcontent-c3="" class="col-12 vertical-flex collection-box ng-tns-c3-0 ng-star-inserted"><div _ngcontent-c3="" class="horizental-flex flex-between flex-center"><div _ngcontent-c3="" class="vertical-flex"><div _ngcontent-c3="" class="lato-bold-font collection-title"><span _ngcontent-c3="" class="ng-tns-c3-0"><h2 _ngcontent-c3="" class="ng-tns-c3-0"><span _ngcontent-c3="" class="lato-bold-font collection-title"> Un restaurant classe </span></h2></span></div><div _ngcontent-c3="" class="collection-description"> Classe un jour, classe toujours ! </div></div><img _ngcontent-c3="" class="ng-tns-c3-0" src="../../assets/img/nearby.svg" style="width: 35px;"></div><div _ngcontent-c3="" class="collection-businesses" style="margin-top: 10px;"><div _ngcontent-c3="" class="row"><!----></div></div><div _ngcontent-c3="" class="collection-view-more lato-bold-font " style="font-size: 16px;color: #ee4a24;"> VOIR PLUS &gt; </div></div><h2 _ngcontent-c3="" class="ng-tns-c3-0"><div _ngcontent-c3="" class="col-12 text-center lato-bold-font" style="font-size: 22px;color: 000#1a709d;margin-top: 10px;margin-bottom: 10px;">Activité Récente</div></h2><div _ngcontent-c3="" class="col-12"></div><div _ngcontent-c3="" class="col-12"><div _ngcontent-c3="" class="soft-hr-blue"></div></div><div _ngcontent-c3="" class="col-12 text-center lato-bold-font"><a _ngcontent-c3="" class="href-underlined" style="color: #1a709d;cursor: pointer;">Voir plus d’actualités ▼ </a></div><div _ngcontent-c3="" class="col-12" style="margin-bottom: 20px;"><div _ngcontent-c3="" class="soft-hr-blue"></div></div></div><div _ngcontent-c3="" class="row" style="margin-top: 20px;"><div _ngcontent-c3="" class="col-12 lato-semibold-font collection-title"><img _ngcontent-c3="" class="ng-tns-c3-0" src="../../assets/img/vynderlife.png" style="width: 200px;"></div><div _ngcontent-c3="" class="col-12 lato-medium-font collection-description" style="margin-bottom: 10px;">  les meilleurs bons plans et les conseils des plus grands experts du domaine de la restauration! </div><!----></div></div><app-download _ngcontent-c3="" class="ng-tns-c3-0" _nghost-c6=""><div _ngcontent-c6="" class="container-fluid" style="background-color: #f2f2f2;"><div _ngcontent-c6="" class="container "><div _ngcontent-c6="" class="col-12 "><div _ngcontent-c6="" class="horizental-flex flex-center" style="min-height: 80vh;flex-wrap: wrap;"><div _ngcontent-c6="" class="text-center col"><img _ngcontent-c6="" src="../../assets/img/vyndUserSplashRomdhane.png" style="width: 365px;"></div><div _ngcontent-c6="" class="vertical-flex col"><span _ngcontent-c6="" class="lato-semibold-font" style="font-size: 28px;color: #363636;"> Vynd est disponible sur Android et bientôt sur IOS. </span><span _ngcontent-c6="" class="lato-font" style="font-size: 14px;;color: #888888; margin-top: 10px;max-width: 500px;">  avec la communauté Vynd et  de tous les avantages de  plateforme instantanément et où que  grâce à l'application mobile. </span><div _ngcontent-c6="" class="horizental-flex"><div _ngcontent-c6="" class="vertical-flex features-items" style="margin-top: 20px;margin-right: 20px;"><span _ngcontent-c6="" class="download-feature lato-font"><img _ngcontent-c6="" class="download-icon" src="../../assets/img/download-review.svg"> Partager et écrire des avis </span><span _ngcontent-c6="" class="download-feature lato-font"><img _ngcontent-c6="" class="download-icon" src="../../assets/img/download-resto.svg"> Accéder au restaurants à proximité </span><span _ngcontent-c6="" class="download-feature lato-font"><img _ngcontent-c6="" class="download-icon" src="../../assets/img/download-photo.svg"> Ajouter et voir les photos </span></div><div _ngcontent-c6="" class="vertical-flex features-items" style="margin-top: 20px;"><span _ngcontent-c6="" class="download-feature lato-font"><img _ngcontent-c6="" class="download-icon" src="../../assets/img/download-coupon.svg"> Consommer des coupons gratuits </span><span _ngcontent-c6="" class="download-feature lato-font"><img _ngcontent-c6="" class="download-icon" src="../../assets/img/download-menu.svg"> Voir les menus </span><span _ngcontent-c6="" class="download-feature lato-font"><img _ngcontent-c6="" class="download-icon" src="../../assets/img/download-checkin.svg"> Faire des Chechkins </span></div></div><div _ngcontent-c6="" class="horizental-flex ml-4" style="margin-top: 10px;margin-bottom: 10px;"><a _ngcontent-c6="" href="https://play.google.com/store/apps/details?id=com.vynd.solution" target="_blank"><img _ngcontent-c6="" class="ml-auto" src="../../assets/img/googleplay_2x.png" style="width: 105px;"></a></div></div></div></div></div></div></app-download><!----></app-home><!----><app-footer _ngcontent-c0="" _nghost-c2=""><div _ngcontent-c2="" class="container-fluid" id="footer" style="background-color: #d1d6dd"><img _ngcontent-c2="" class="singe-footer d-none d-lg-block" src="../../assets/img/9erd-footer-01.svg"><div _ngcontent-c2="" class="container"><div _ngcontent-c2="" class="row"><div _ngcontent-c2="" class="col-12 horizental-flex" style="justify-content: space-between;align-items: center;"><img _ngcontent-c2="" src="../../assets/img/logo-vynd.svg" style="width: 130px;"><select _ngcontent-c2=""><option _ngcontent-c2="">Français</option><option _ngcontent-c2="">Anglais</option></select></div><div _ngcontent-c2="" class="col-12"><div _ngcontent-c2="" class="soft-hr-blue"></div></div><div _ngcontent-c2="" class="col-12 horizental-flex lato-font footer-columns" style="justify-content: space-between;font-size: 12px;;"><div _ngcontent-c2="" class="vertical-flex"><span _ngcontent-c2="" class=""><h3 _ngcontent-c2="" class="title-footer lato-semibold-font" style="font-size: 18px;">À propos</h3></span><a _ngcontent-c2="" href="https://support.vynd.com/a-propos">À propos de Vynd</a><a _ngcontent-c2="" href="http://blog.vynd.com/" target="_blank">Blog</a><a _ngcontent-c2="" href="https://www.vynd.com/life" target="_blank">Vynder Life</a><a _ngcontent-c2="" href="http://blog.vynd.com/contact" target="_blank">Contact</a><a _ngcontent-c2="" href="http://blog.vynd.com/carriere" target="_blank">Carrière</a></div><div _ngcontent-c2="" class="vertical-flex"><span _ngcontent-c2="" class="title-footer lato-semibold-font"><h3 _ngcontent-c2="" class="title-footer lato-semibold-font" style="font-size: 18px;">Pour les Vynders</h3></span><a _ngcontent-c2="" href="#">Rechercher un restaurant</a><a _ngcontent-c2="" href="#">Noter un endroit</a><a _ngcontent-c2="" routerlink="Download-App-Vynd" href="/Download-App-Vynd">Télécharger l’application Vynd</a><a _ngcontent-c2="" href="https://support.vynd.com/" target="_blank">Support</a></div><div _ngcontent-c2="" class="vertical-flex"><span _ngcontent-c2="" class="title-footer lato-semibold-font"><h3 _ngcontent-c2="" class="title-footer lato-semibold-font" style="font-size: 18px;">Pour les commerçants</h3></span><a _ngcontent-c2="" href="https://manager.vynd.com/" target="_blank">Vynd Manager</a><a _ngcontent-c2="" href="#">Ajouter mon commerce</a><a _ngcontent-c2="" href="#">Support Vynd Manager</a></div><div _ngcontent-c2="" class="vertical-flex"><div _ngcontent-c2="" class="horizental-flex social-icons" style="margin-bottom: 10px;"><a _ngcontent-c2="" href="https://www.facebook.com/vyndinc/" target="_blank"><img _ngcontent-c2="" src="../../assets/img/facebook.png"></a><a _ngcontent-c2="" href="https://www.instagram.com/vyndapp/" target="_blank"><img _ngcontent-c2="" src="../../assets/img/instagram.png"></a><a _ngcontent-c2="" href="https://www.youtube.com/channel/UCAxzcRMU3j56Hw5T_d21lVg" target="_blank"><img _ngcontent-c2="" src="../../assets/img/youtube.png"></a><a _ngcontent-c2="" href="https://www.linkedin.com/company/10371019/" target="_blank"><img _ngcontent-c2="" src="../../assets/img/linkedin.png"></a></div><a _ngcontent-c2="" href="#">Conditions d'utilisation</a><a _ngcontent-c2="" href="http://www.vyndsolutions.com/" target="_blank">Vynd Solutions</a><a _ngcontent-c2="" class="href-underlined" style="cursor:pointer;">Envoyez nous un feedback !</a></div></div></div></div></div><!----></app-footer></app-root></body></html>
