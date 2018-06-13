@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "start":"node server",
     "start:express-server": "node server",
     "zaid": "ng run user-web-v2:server && ng build --prod && npm run start:express-server",
     "compile_@agm_core": "babel node_modules/@agm/core -d node_modules/@agm/core --presets es2015",
